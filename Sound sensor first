@@ -1,0 +1,15 @@
+//@lj smart
+void setup() {
+  pinMode(5, INPUT);//connect sound sensor digital output pin
+  pinMode(3, OUTPUT);//connect led positive pin
+}
+
+void loop() {
+  int k = digitalRead(5);
+  if (k == HIGH) {
+    digitalWrite(3, HIGH);
+  } else {
+    digitalWrite(3, LOW);
+  }
+}
+
